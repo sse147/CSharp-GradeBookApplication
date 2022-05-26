@@ -44,14 +44,14 @@ namespace GradeBook.UserInterfaces
 
             //BaseGradeBook gradeBook = new BaseGradeBook(name);
 
-            if (parts[2] == "standard")
+            if (gradeBookType == "standard")
             {
-                var gradeBook = new StandardGradeBook(gradeBookType);
+                var gradeBook = new StandardGradeBook(name);
             }
 
-            if (parts[2] == "ranked")
+            if (gradeBookType == "ranked")
             {
-                var gradeBook = new RankedGradeBook(gradeBookType);
+                var gradeBook = new RankedGradeBook(name);
             }
 
             Console.WriteLine(" is not a supported type of gradebook, please try again");
