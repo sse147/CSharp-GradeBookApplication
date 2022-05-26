@@ -46,12 +46,12 @@ namespace GradeBook.UserInterfaces
 
             if (gradeBookType == "standard")
             {
-                var gradeBook = new StandardGradeBook(name);
+                BaseGradeBook gradeBook = new StandardGradeBook(name);
             }
 
             if (gradeBookType == "ranked")
             {
-                var gradeBook = new RankedGradeBook(name);
+                BaseGradeBook gradeBook = new RankedGradeBook(name);
             }
 
             Console.WriteLine(" is not a supported type of gradebook, please try again");
